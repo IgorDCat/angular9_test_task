@@ -1,0 +1,15 @@
+.card {
+  background: white;
+  padding: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.active {
+  background: #3366ff;
+  color: white;
+}
