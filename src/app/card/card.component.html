@@ -1,3 +1,7 @@
-<div class='card' [ngClass]='{active: isActive}'>
-  <h2>{{ title }}</h2>
+<div
+  class='card'
+  [routerLink]='["notes/", note.id]'
+  routerLinkActive='active'
+>
+  <h2>{{ note.title }}</h2>
 </div>

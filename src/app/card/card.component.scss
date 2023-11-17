@@ -7,9 +7,9 @@
   &:hover {
     opacity: 0.9;
   }
-}
 
-.active {
-  background: #3366ff;
-  color: white;
+  &.active {
+    background: #3366ff;
+    color: white;
+  }
 }

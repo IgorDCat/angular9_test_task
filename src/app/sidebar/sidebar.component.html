@@ -1,7 +1,7 @@
 <div class='sidebar'>
-  <app-card
-    *ngFor='let note of notes'
-    [title]='note.title'
-    [text]='note.text'
-  ></app-card>
+  <a *ngFor='let note of notes'>
+    <app-card
+      [note]='note'
+    ></app-card>
+  </a>
 </div>
