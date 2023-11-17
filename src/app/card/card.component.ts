@@ -6,7 +6,9 @@ import { Component, HostBinding, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  @Input() @HostBinding() isActive: boolean;
+  @Input() @HostBinding() isActive: boolean
+  @Input() title: string
+  @Input() text: string
 
   constructor() { }
 

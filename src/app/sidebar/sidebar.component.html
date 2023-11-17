@@ -1,4 +1,7 @@
 <div class='sidebar'>
-  <app-card [isActive]='true'></app-card>
-  <app-card></app-card>
+  <app-card
+    *ngFor='let note of notes'
+    [title]='note.title'
+    [text]='note.text'
+  ></app-card>
 </div>
