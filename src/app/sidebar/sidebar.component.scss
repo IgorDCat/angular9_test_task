@@ -6,3 +6,15 @@
   box-sizing: border-box;
   background: #f4f4f4;
 }
+
+@media (max-width: 767px){
+  .sidebar{
+    width: 300px;
+  }
+}
+
+@media (max-width: 550px){
+  .sidebar{
+    width: 200px;
+  }
+}
