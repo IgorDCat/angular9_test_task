@@ -1,0 +1,42 @@
+.input {
+  width: 300px;
+  padding: 10px;
+}
+
+.textarea {
+  width: 300px;
+  padding: 10px;
+  height: 100px;
+  resize: none;
+}
+
+.content {
+  border: black 2px solid;
+  border-radius: 5px;
+  background: #f4f4f4;
+  padding: 20px;
+  z-index: 10;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: black 2px solid;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+p {
+  margin-top: 5px;
+}
+
+.btn-close {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

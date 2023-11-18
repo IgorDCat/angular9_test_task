@@ -1,5 +1,9 @@
-<a routerLink='/home'>
-  <div class='header'>
+<app-modal *ngIf='modalService.isModalActive'></app-modal>
+<div class='header'>
+  <a routerLink='/home'>
     <h1>Мои заметки</h1>
-  </div>
-</a>
+  </a>
+  <button (click)='modalService.setModalActive()' class='btn'>
+    Добавить заметку
+  </button>
+</div>

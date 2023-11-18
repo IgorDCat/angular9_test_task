@@ -27,3 +27,35 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
+.btn {
+  padding: 10px 15px;
+  background: none;
+  cursor: pointer;
+  font-weight: 700;
+
+  &:hover {
+    color: #3366ff;
+  }
+
+  &:active {
+    background: #3366ff;
+    color: white;
+  }
+}
+
+.btn-clear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0 10px;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.error {
+  color: red;
+}

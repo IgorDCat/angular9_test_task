@@ -1,0 +1,43 @@
+<div class='modal'>
+  <form class='content' [formGroup]='form'>
+    <div class='btn-close'>
+      <button
+        (click)='modalService.setModalNonActive()'
+        class='btn-clear'
+      >
+        ✖
+      </button>
+    </div>
+    <h2>Новая заметка</h2>
+    <div>
+      <p>Заголовок:</p>
+      <input formControlName='title' class='input'>
+    </div>
+    <small
+      *ngIf='form.get("title")?.touched && form.get("title")?.errors?.required'
+      class='error'
+    >
+      Поле обязательное
+    </small>
+    <div>
+      <p>Текст:</p>
+      <textarea formControlName='text' class='textarea'></textarea>
+    </div>
+    <small
+      *ngIf='form.get("text")?.touched && form.get("text")?.errors?.required'
+      class='error'
+    >
+      Поле обязательное
+    </small>
+    <div>
+      <button
+        (click)='addNote()'
+        class='btn'
+        [disabled]='form.invalid'
+      >
+        Создать
+      </button>
+    </div>
+  </form>
+</div>
+

@@ -20,4 +20,8 @@ export class DataService {
   getNoteById(id: string) {
     return this.notes.filter(note => note.id === id)[0]
   }
+
+  addNote(note: Note) {
+    this.notes.push(note)
+  }
 }
