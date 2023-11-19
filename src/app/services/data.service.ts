@@ -17,11 +17,11 @@ export class DataService {
     return of(this.notes).pipe(delay(500))
   }
 
-  getNoteById(id: string) {
+  getNoteById(id: string): Note {
     return this.notes.filter(note => note.id === id)[0]
   }
 
-  addNote(note: Note) {
+  addNote(note: Note): void {
     this.notes.push(note)
   }
 }
